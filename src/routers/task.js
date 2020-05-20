@@ -4,7 +4,6 @@ const auth = require("../middleware/auth");
 const Task = require("../models/tasks");
 
 router.get("/tasks", auth, async (req, res) => {
-  // const tasks = await Task.find({ owner: req.user._id });
   const match = {};
   const sort = {};
 
